@@ -598,14 +598,14 @@ textarea {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: var(--blue);
-  box-shadow: 0 2px 5px rgb(255, 255, 255, 0.25);
+  background-color: #fff;
+  border: solid 1px var(--blue);
   cursor: pointer;
   padding: 1.5rem 2rem 1rem 2rem;
   border-radius: 10px;
 }
 
 #scrollToTopBtn ion-icon {
-  color: var(--white);
+  color: var(--blye);
   font-size: 3.5rem;
 }
