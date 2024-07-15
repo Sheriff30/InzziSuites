@@ -79,7 +79,7 @@ header {
 }
 
 .sticky {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-menu-button ion-icon {
@@ -586,4 +586,25 @@ textarea {
 
 .date {
   font-size: 2rem;
+}
+
+/* Scroll to Top*/
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  cursor: pointer;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn ion-icon {
+  color: var(--white);
+  font-size: 3.5rem;
 }

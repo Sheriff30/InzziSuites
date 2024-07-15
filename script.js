@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 let isOpen = false;
 const toggleBtn = document.querySelector(".toggle-menu-button ion-icon");
 const menu = document.querySelector(".mobile-nav-container");
+const links = document.querySelectorAll(".mobile-nav a");
+
 toggleBtn.addEventListener("click", function (e) {
   if (!isOpen) {
     isOpen = !isOpen;
@@ -38,6 +40,14 @@ toggleBtn.addEventListener("click", function (e) {
     menu.classList.remove("show-menu");
     e.target.name = "menu-outline";
   }
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    isOpen = false;
+    menu.classList.remove("show-menu");
+    toggleBtn.name = "menu-outline";
+  });
 });
 
 // Sticky header
@@ -51,5 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       header.classList.remove("sticky");
     }
+  });
+});
+
+// Scroll to top
+
+let mybutton = document.getElementById("scrollToTopBtn");
+let targetSection = document.querySelector(".hero-container");
+
+let observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+observer.observe(targetSection);
+
+mybutton.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });
