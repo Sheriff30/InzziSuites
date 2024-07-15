@@ -575,3 +575,13 @@ textarea {
   font-family: "True Dream", sans-serif;
   font-size: 2rem;
 }
+
+/* Privacy page  */
+
+.privacy .title1 {
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 2rem;
+}

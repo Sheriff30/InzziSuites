@@ -22,6 +22,44 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="./script.js"></script>
+    <style>
+      .hero-container {
+        width: 100%;
+        padding: 0 14.7rem;
+        margin-bottom: 25rem;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .hero-container {
+          padding: 0 4.7rem;
+          margin-bottom: 12rem;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .hero-container {
+          padding: 0 1.7rem;
+        }
+
+        .hero-text .text {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .mb {
+        margin-bottom: 2rem;
+        display: inline-block;
+      }
+
+      .data-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+      ul {
+        margin-left: 4rem;
+      }
+    </style>
   </head>
 
   <body>
@@ -38,7 +76,7 @@
     <header>
       <img src="./assets/Logo.png" class="Logo" alt="Logo" />
       <ul class="nav">
-        <a class="active" href="index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="book.html">Book Now</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -49,336 +87,95 @@
     </header>
     <!-- Hero Section -->
     <div class="hero-container">
-      <div class="hero">
-        <div class="hero-text">
-          <p class="title1">Your Ideal Home Rental Solution</p>
-          <h1 class="title2">
-            <p>Meet Your Rental</p>
-            <p>Goals with Ease</p>
-          </h1>
-          <p class="text">
-            Welcome to InzziSuites, your top choice for corporate and short-term
-            rentals. We provide excellent service to high-quality clients. Using
-            our innovative methods, we ensure your properties are always
-            occupied, helping you meet your financial goals easily and
-            efficiently.
-          </p>
-          <div class="buttons">
-            <a href="#" class="button-blue">Contact Us</a>
-          </div>
-        </div>
-        <div class="hero-img">
-          <img src="./assets/Hero-img.png" alt="Hero-image" />
-        </div>
-      </div>
-    </div>
-    <!-- Section 3 -->
-    <div class="container">
-      <div class="section-3">
-        <!-- Row1 -->
-        <div class="section-3-row">
-          <div class="row-img">
-            <img src="./assets/section3-1.png" alt="" />
-          </div>
-          <div class="row-text">
-            <div class="row-title">
-              <img src="./assets/icon3-1.svg" class="icon" alt="icon" />
-              <p class="title1">Focus on what matters most</p>
-            </div>
-            <p class="text">
-              InzziSuites safeguards your investment with a two-step approach.
-              First, our meticulous tenant screening process, conducted by our
-              team, identifies responsible occupants for your property. Second,
-              as your long-term company tenant, we guarantee on-time, fixed rent
-              payments. This eliminates the worry of vacancies and late
-              payments, allowing you to focus on what truly matters.
-            </p>
-          </div>
-        </div>
-        <!-- Row2 -->
-        <div class="section-3-row">
-          <div class="row-img">
-            <img src="./assets/section3-2.png" alt="" />
-          </div>
-          <div class="row-text">
-            <div class="row-title">
-              <img src="./assets/icon3-2.svg" alt="icon" class="icon" />
-              <p class="title1">Building a Community of Respectful Tenants</p>
-            </div>
-            <p class="text">
-              At InzziSuites, we prioritize the complete care of your
-              investment. Our in-depth tenant screening process ensures only
-              responsible and qualified individuals occupy your property. We
-              also provide robust property, liability and valuables insurance to
-              safeguard from unforeseen damage. We handle all routine
-              maintenance needs, proactively addressing minor issues before they
-              escalate. This not only keeps your property in impeccable
-              condition but also saves you time and hassle.
-            </p>
-          </div>
-        </div>
-        <!-- Row3 -->
-        <div class="section-3-row">
-          <div class="row-img">
-            <img src="./assets/section3-3.png" alt="" />
-          </div>
-          <div class="row-text">
-            <div class="row-title">
-              <img src="./assets/icon3-3.svg" class="icon" alt="icon" />
-              <p class="title1">Stress-Free Rent Collection</p>
-            </div>
-            <p class="text">
-              InzziSuites eliminates the uncertainty of rent collection. As your
-              trusted partner, we handle all aspects of rent collection,
-              ensuring you receive your payments on time. This frees you from
-              the hassle of chasing payments and allows you to focus on the
-              financial security your rental property provides.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section 4 -->
-    <div class="container">
-      <div class="section-4">
-        <div class="section-4-text">
-          <p class="title1">Stress-Free Rentals Starts with InzziSuites</p>
-          <p class="text">Guaranteed Tenants, On-Time Payments!</p>
-          <a href="#" class="button-white">
-            <span> List your property </span>
-            <svg
-              height="12"
-              class="arrow"
-              viewBox="0 0 16 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.07804 11.9542C8.95621 11.9088 8.85208 11.8319 8.77881 11.7333C8.70553 11.6346 8.66641 11.5186 8.66638 11.4L8.66638 6.60018L0.666645 6.60018C0.48984 6.60018 0.320276 6.53697 0.195256 6.42446C0.0702359 6.31194 6.84441e-07 6.15933 6.91397e-07 6.00021C6.98352e-07 5.84109 0.070236 5.68848 0.195256 5.57597C0.320276 5.46345 0.48984 5.40024 0.666645 5.40024L8.66638 5.40024L8.66638 0.600446C8.66628 0.481714 8.70532 0.365623 8.77857 0.266871C8.85181 0.168119 8.95596 0.0911462 9.07784 0.0456967C9.19972 0.000247188 9.33384 -0.0116351 9.46323 0.0115542C9.59261 0.0347434 9.71144 0.0919614 9.80468 0.175965L15.8045 5.57573C15.8665 5.63145 15.9156 5.69762 15.9492 5.77046C15.9827 5.84329 16 5.92137 16 6.00021C16 6.07906 15.9827 6.15713 15.9492 6.22997C15.9156 6.3028 15.8665 6.36897 15.8045 6.42469L9.80468 11.8245C9.7114 11.9083 9.59257 11.9654 9.46322 11.9885C9.33388 12.0116 9.19983 11.9997 9.07804 11.9542Z"
-                fill="#1E0342"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="section-4-img">
-          <img src="./assets/section4+6.png" alt="section4 image" />
-        </div>
-      </div>
-    </div>
-    <!-- Section 5 -->
-    <div class="container">
-      <div class="section-5">
-        <div class="section-5-heading">
-          <p class="title1">
-            Escape the Ordinary: Find Your Perfect Holiday Home
-          </p>
-          <p class="text" style="text-align: center; width: 70%">
-            More than just a place to stay, our feature-rich accommodations
-            offer everything you need to create a personalized home. Relax and
-            recharge in a stylish, comfortable space designed to exceed your
-            expectations.
+      <div class="privacy">
+        <div class="title1">Terms of Service</div>
+        <strong class="text date mb">Effective Date: May 15, 2023 </strong>
+        <p class="mb">
+          Welcome to Premium SmartStay Home Rental L.L.C., also referred to as
+          “SmartStay,” “we,” “us,” or “our”. Our services provide a platform for
+          property owners and individuals seeking short term rentals, with some
+          properties directly managed by us. By accessing and using our
+          services, you agree to abide by these terms of service.
+        </p>
+
+        <p>
+          By accessing or using our Services, you agree to this Privacy Policy
+          and our Terms of Service. If you do not agree with our policies and
+          practices, your choice is to not use our Services.
+        </p>
+
+        <div class="data-row">
+          <div class="title1">1. Scope of SmartStay Services</div>
+          <p>
+            We provide a platform to connect hosts with guests, and ensure they
+            are ready for guest occupancy.
           </p>
         </div>
-        <div class="section-5-content">
-          <div class="section-5-img">
-            <img src="./assets/section5.png" alt="section 5 img" />
-          </div>
-          <div class="section-5-text">
-            <div class="section-5-text-row">
-              <div class="row-title">
-                <img src="./assets/icon-5-1.svg" class="icon" alt="icon" />
-                <p class="title1">Every Need Met</p>
-              </div>
-              <p class="text">
-                Unwind and Relax with Our Comprehensive Amenities
-              </p>
-            </div>
-            <div class="section-5-text-row">
-              <div class="row-title">
-                <img src="./assets/icon-5-2.svg" class="icon" alt="icon" />
-                <p class="title1">Your Oasis Awaits</p>
-              </div>
-              <p class="text">
-                Cozy Comfort: Experience Unparalleled Relaxation
-              </p>
-            </div>
-            <div class="section-5-text-row">
-              <div class="row-title">
-                <img src="./assets/icon-5-1.svg" class="icon" alt="icon" />
-                <p class="title1">Sleek Design</p>
-              </div>
-              <p class="text">
-                Modern Simplicity: Enjoy a Streamlined Living Space
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section 6 -->
-    <div class="container">
-      <div class="section-4">
-        <div class="section-4-text">
-          <p class="title1">
-            Make Yourself at Home: Book Your InzziSuites Stay Today
+        <div class="data-row">
+          <div class="title1">2. Modification of Terms of Service</div>
+          <p>
+            We reserve the right to modify these Terms of Service at our
+            discretion. We will notify you of any changes by revising the date
+            at the top of the policy.
           </p>
-          <p class="text">
-            Find the best short-term rentals in Dubai for modern travelers.
+        </div>
+        <div class="data-row">
+          <div class="title1">3. User Responsibilities</div>
+          <p>
+            Users are responsible for maintaining the confidentiality of their
+            SmartStay account password, and for all activities related to their
+            account. You agree to notify us immediately if you notice any
+            unauthorized use of your account.
           </p>
-          <a href="#" class="button-white">
-            <span> Contact Us </span>
-            <svg
-              height="12"
-              class="arrow"
-              viewBox="0 0 16 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.07804 11.9542C8.95621 11.9088 8.85208 11.8319 8.77881 11.7333C8.70553 11.6346 8.66641 11.5186 8.66638 11.4L8.66638 6.60018L0.666645 6.60018C0.48984 6.60018 0.320276 6.53697 0.195256 6.42446C0.0702359 6.31194 6.84441e-07 6.15933 6.91397e-07 6.00021C6.98352e-07 5.84109 0.070236 5.68848 0.195256 5.57597C0.320276 5.46345 0.48984 5.40024 0.666645 5.40024L8.66638 5.40024L8.66638 0.600446C8.66628 0.481714 8.70532 0.365623 8.77857 0.266871C8.85181 0.168119 8.95596 0.0911462 9.07784 0.0456967C9.19972 0.000247188 9.33384 -0.0116351 9.46323 0.0115542C9.59261 0.0347434 9.71144 0.0919614 9.80468 0.175965L15.8045 5.57573C15.8665 5.63145 15.9156 5.69762 15.9492 5.77046C15.9827 5.84329 16 5.92137 16 6.00021C16 6.07906 15.9827 6.15713 15.9492 6.22997C15.9156 6.3028 15.8665 6.36897 15.8045 6.42469L9.80468 11.8245C9.7114 11.9083 9.59257 11.9654 9.46322 11.9885C9.33388 12.0116 9.19983 11.9997 9.07804 11.9542Z"
-                fill="#1E0342"
-              />
-            </svg>
-          </a>
         </div>
-        <div class="section-4-img">
-          <img src="./assets/section4+6.png" alt="section4 image" />
+        <div class="data-row">
+          <div class="title1">4. Host Obligations</div>
+          <p>
+            As a host, you must provide accurate information about your
+            property, and comply with our hosting terms, including the provision
+            of an environment conducive to guest safety and comfort.
+          </p>
         </div>
-      </div>
-    </div>
-    <!-- Section 7 -->
-    <div class="container">
-      <div class="section-7">
-        <div class="section-7-heading">
-          <p class="title1">Frequently asked Questions</p>
+        <div class="data-row">
+          <div class="title1">5. Guest Responsibilities</div>
+          <p>
+            Guests are responsible for any property damage, and must comply with
+            the house rules set by the host. The booking guest is also
+            responsible for the behaviour of all others within the property
+            during their stay.
+          </p>
         </div>
-        <div class="faq">
-          <div class="faq-row">
-            <div class="q-row">
-              <p class="title1" style="font-family: Varta; font-weight: bold">
-                Are you a licensed company?
-              </p>
-              <div class="toggle-answer">
-                <img src="./assets/show.svg" class="icon2" alt="icon" />
-              </div>
-            </div>
-            <div class="a-row">
-              <div class="text">
-                Yes, we are an officially licensed Holiday Home Operator Company
-                regulated by the Dubai government and the Dubai Economy and
-                Tourism Department (DTCM). You can trust InzziSuites to operate
-                with the highest standards of professionalism and legality.
-              </div>
-            </div>
-          </div>
-          <div class="faq-row">
-            <div class="q-row">
-              <p class="title1" style="font-family: Varta; font-weight: bold">
-                How do you ensure the property is kept in perfect condition?
-              </p>
-              <div class="toggle-answer">
-                <img
-                  src="./assets/show.svg"
-                  class="icon2"
-                  class="icon"
-                  alt="icon"
-                />
-              </div>
-            </div>
-            <div class="a-row">
-              <div class="text">
-                We have a routine maintenance schedule and employ professional
-                cleaners to keep the property in pristine condition.
-                Additionally, we conduct regular inspections to address any
-                issues promptly.
-              </div>
-            </div>
-          </div>
-          <div class="faq-row">
-            <div class="q-row">
-              <p class="title1" style="font-family: Varta; font-weight: bold">
-                Who are the tenants that stay in the properties?
-              </p>
-              <div class="toggle-answer">
-                <img
-                  src="./assets/show.svg"
-                  class="icon2"
-                  class="icon"
-                  alt="icon"
-                />
-              </div>
-            </div>
-            <div class="a-row">
-              <div class="text">
-                We cater to high-quality clients, including corporate travelers
-                and short-term guests, ensuring that your property is occupied
-                by responsible and respectful tenants.
-              </div>
-            </div>
-          </div>
-          <div class="faq-row">
-            <div class="q-row">
-              <p class="title1" style="font-family: Varta; font-weight: bold">
-                How does the fixed rent guarantee work?
-              </p>
-              <div class="toggle-answer">
-                <img
-                  src="./assets/show.svg"
-                  class="icon2"
-                  class="icon"
-                  alt="icon"
-                />
-              </div>
-            </div>
-            <div class="a-row">
-              <div class="text">
-                We offer a fixed rent guarantee, meaning you receive a
-                consistent rental income regardless of occupancy. This removes
-                the uncertainty of fluctuating rental income and ensures
-                financial stability.
-              </div>
-            </div>
-          </div>
-          <div class="faq-row">
-            <div class="q-row">
-              <p class="title1" style="font-family: Varta; font-weight: bold">
-                How does subletting to InzziSuites benefit me as a landlord?
-              </p>
-              <div class="toggle-answer">
-                <img
-                  src="./assets/show.svg"
-                  class="icon2"
-                  class="icon"
-                  alt="icon"
-                />
-              </div>
-            </div>
-            <div class="a-row">
-              <div class="text">
-                Subletting to InzziSuites guarantees you a fixed rent,
-                eliminating concerns about vacancy and rent collection. We also
-                take care of property maintenance, ensuring it remains in top
-                condition.
-              </div>
-            </div>
-          </div>
+        <div class="data-row">
+          <div class="title1">7. Governing Law</div>
+          <p>
+            SmartStay’s liability is limited to the maximum extent permitted by
+            law. We are not responsible for any indirect, incidental, special,
+            consequential or punitive damages, or any loss of profits or
+            revenues. We assume no liability for any disputes arising from
+            rental agreements between guests and hosts.
+          </p>
         </div>
-      </div>
-    </div>
-    <!-- Section 8 -->
-    <div class="container">
-      <div class="section-8">
-        <div class="section-8-heading">
-          <p class="title1">Have any other questions?</p>
-          <div class="text">
-            <p>Don’t hesitate to send us an email with your enquiry or</p>
-            <p>
-              statement at:
-              <a href="mailto:support@inzzisuites.com">
-                support@inzzisuites.me
-              </a>
-            </p>
-          </div>
+        <div class="data-row">
+          <div class="title1">8. Governing Law</div>
+          <p>
+            These Terms of Service are governed by the laws of Dubai, United
+            Arab Emirates.
+          </p>
+        </div>
+        <div class="data-row">
+          <div class="title1">8. Dispute Resolution</div>
+          <p>
+            Any disputes arising out of these terms or the use of our services
+            will be resolved in accordance with the laws of Dubai, United Arab
+            Emirates.
+          </p>
+        </div>
+        <div class="data-row">
+          <div class="title1">9. Contact Information</div>
+          <p>
+            If you have any questions about these Terms, please contact us at
+            legal@smartstay.me.
+          </p>
         </div>
       </div>
     </div>
@@ -390,8 +187,8 @@
         </div>
         <ul class="section-9-col">
           <p>Privacy</p>
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Statement</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="privacy-statement.html">Privacy Statement</a>
         </ul>
         <ul class="section-9-col">
           <p>Contact</p>
