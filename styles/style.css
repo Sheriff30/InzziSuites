@@ -599,6 +599,7 @@ textarea {
   border: none;
   outline: none;
   background-color: var(--blue);
+  box-shadow: 0 2px 5px rgb(255, 255, 255, 0.25);
   cursor: pointer;
   padding: 1.5rem 2rem 1rem 2rem;
   border-radius: 10px;
