@@ -170,6 +170,10 @@
 @media screen and (max-width: 500px) {
   .container {
     padding: 0rem 1.7rem !important;
+    margin-bottom: 9rem;
+  }
+  .hero-container {
+    margin-bottom: 9rem;
   }
 
   header {
