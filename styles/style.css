@@ -10,6 +10,7 @@
   --blue: #1e0342;
   --green: #9ac8cd;
   --white: #e1f7f5;
+  --light-blue: #351c55;
 }
 
 html {
@@ -218,7 +219,7 @@ header .nav a.active::after {
 }
 
 .text {
-  color: var(--blue);
+  color: var(--light-blue);
 }
 
 .buttons {
@@ -434,7 +435,8 @@ header .nav a.active::after {
 
 .toggle-answer {
   height: 3.2rem;
-  min-width: 3.2rem;
+  max-width: 3.2rem;
+  width: 3.2rem;
 }
 
 .toggle-answer img {
