@@ -97,8 +97,8 @@ header {
   top: -2.5rem;
   left: 70%;
   background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   justify-content: center;
