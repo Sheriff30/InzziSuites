@@ -37,7 +37,7 @@ body {
 .Logo {
   max-width: 26.9rem;
   position: relative;
-  z-index: 999999999999999999999999999999999;
+  z-index: 1111111111111;
 }
 
 .bg-light-green {
@@ -63,12 +63,22 @@ body {
 }
 /* Header */
 header {
-  padding: 0 14.7rem;
-  margin-bottom: 12rem;
-  margin-top: 2.5rem;
+  padding: 2.5rem 14.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.9);
+  z-index: 999999999999999999;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sticky {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Smooth shadow */
 }
 
 .toggle-menu-button ion-icon {
@@ -80,7 +90,8 @@ header {
 }
 
 .mobile-nav-container {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: calc(100vh + 2.5rem);
   top: -2.5rem;
@@ -166,6 +177,7 @@ header .nav a.active::after {
 .hero-container {
   width: 100%;
   padding-left: 14.7rem;
+  margin-top: 19rem;
   margin-bottom: 12rem;
 }
 

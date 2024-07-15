@@ -20,9 +20,11 @@
   html {
     font-size: 45%;
   }
-  .container,
-  header {
+  .container {
     padding: 0 5.7rem;
+  }
+  header {
+    padding: 2.5rem 5.7rem;
   }
 
   .hero-container {
@@ -68,9 +70,12 @@
     display: none;
   }
 
-  .container,
-  header {
+  .container {
     padding: 0 4.7rem;
+  }
+
+  header {
+    padding: 2.5rem 4.7rem;
   }
 
   .hero-container {
@@ -163,14 +168,16 @@
 }
 
 @media screen and (max-width: 500px) {
-  .container,
-  header {
-    padding: 0 1.7rem !important;
-    margin-bottom: 6rem;
+  .container {
+    padding: 0rem 1.7rem !important;
   }
 
+  header {
+    padding: 2.5rem 1.7rem !important;
+  }
   .hero-container {
     padding: 0 1.7rem;
+    margin-top: 13rem;
   }
 
   .title2 {
