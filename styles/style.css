@@ -244,6 +244,13 @@ header .nav a.active::after {
   letter-spacing: 0.05em;
   border: solid 1px transparent;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.button-blue:hover {
+  background-color: #fff;
+  color: var(--blue);
+  border: solid 1px var(--blue);
 }
 
 .button-white {
@@ -264,6 +271,21 @@ header .nav a.active::after {
   line-height: 2.2rem;
   letter-spacing: 0.05em;
   cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.button-white:hover {
+  background-color: var(--blue) !important;
+  border: #fff 1px solid !important;
+  color: #fff;
+}
+.button-white:hover svg path {
+  transition: 0.3s ease-in-out all;
+}
+
+.button-white:hover svg path {
+  stroke: #fff;
+  fill: #fff;
 }
 
 .hero-img {
