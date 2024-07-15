@@ -1,0 +1,200 @@
+@media screen and (min-width: 1729px) {
+  .hero-container {
+    padding: 0 !important;
+    max-width: 143.4rem;
+    margin: 0 auto 12rem auto;
+  }
+
+  .container {
+    max-width: 143.4rem;
+    margin: 0 auto 12rem auto;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  html {
+    font-size: 45%;
+  }
+  .container,
+  header {
+    padding: 0 5.7rem;
+  }
+
+  .hero-container {
+    padding: 0 5.7rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .title2 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .toggle-menu-button,
+  .mobile-nav-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Logo {
+    max-width: 18rem;
+  }
+
+  .toggle-answer {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .section-3-row .title1 {
+    line-height: 3rem;
+  }
+
+  .logo-footer img {
+    max-width: 15rem;
+  }
+
+  header .nav {
+    display: none;
+  }
+
+  .container,
+  header {
+    padding: 0 4.7rem;
+  }
+
+  .hero-container {
+    padding: 0 4.7rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text .text,
+  .hero-text .title2 {
+    max-width: 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .section-3-row {
+    flex-direction: column-reverse !important;
+    gap: 5rem;
+  }
+
+  .section-3-row .row-text {
+    max-width: 100%;
+  }
+
+  .section-4 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-4-text .button-white {
+    margin: 2rem auto;
+  }
+
+  .section-5-content {
+    flex-direction: column;
+  }
+
+  .section-5-content {
+    align-items: start;
+  }
+
+  .section-5-img {
+    margin: 0 auto;
+  }
+
+  .section-7-heading .text {
+    text-align: center;
+  }
+
+  .section-5-heading {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .section-5-heading .title1 {
+    line-height: 3rem;
+  }
+
+  .q-row .title1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .section-9 {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .faq {
+    padding: 3rem;
+  }
+  .hero,
+  .section-5-content {
+    gap: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container,
+  header {
+    padding: 0 1.7rem !important;
+    margin-bottom: 6rem;
+  }
+
+  .hero-container {
+    padding: 0 1.7rem;
+  }
+
+  .title2 {
+    line-height: 5rem;
+  }
+
+  .section-5-text-row .row-title {
+    gap: 2rem;
+  }
+  .section-3-row .row-text .row-title {
+    gap: 2rem;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-7-heading,
+  .section-8-heading {
+    margin-bottom: 6rem;
+  }
+  .form-container {
+    padding: 3.5rem 3.5rem;
+  }
+}

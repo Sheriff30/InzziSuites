@@ -1,0 +1,565 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: #1e0342;
+  --green: #9ac8cd;
+  --white: #e1f7f5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  color: var(--blue);
+  font-family: "Varta", sans-serif;
+  font-size: 2.4rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 14.7rem;
+  margin-bottom: 12rem;
+}
+
+.Logo {
+  max-width: 26.9rem;
+  position: relative;
+  z-index: 999999999999999999999999999999999;
+}
+
+.bg-light-green {
+  background-color: var(--white);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.no-margin {
+  margin-bottom: 0 !important;
+}
+
+.icon {
+  max-width: 8.2rem;
+  z-index: 111;
+  position: relative;
+}
+
+.arrow {
+  max-width: 1.6rem;
+}
+/* Header */
+header {
+  padding: 0 14.7rem;
+  margin-bottom: 12rem;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-menu-button ion-icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  cursor: pointer;
+  z-index: 99999999999999999999;
+  position: relative;
+}
+
+.mobile-nav-container {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 2.5rem);
+  top: -2.5rem;
+  left: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s all;
+}
+
+.mobile-nav-container.show-menu {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  z-index: 1111111111;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.mobile-nav a {
+  font-size: 4rem;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav a.active {
+  color: var(--green);
+  position: relative;
+}
+
+.mobile-nav a.active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 26px;
+  background-color: var(--green);
+  bottom: 5px;
+  left: 0;
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: var(--blue);
+}
+
+header .nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+header .nav a.active {
+  color: var(--green);
+  position: relative;
+}
+
+header .nav a.active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 26px;
+  background-color: var(--green);
+  bottom: 5px;
+  left: 0;
+}
+
+/* Hero section */
+
+.hero-container {
+  width: 100%;
+  padding-left: 14.7rem;
+  margin-bottom: 12rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12rem;
+}
+
+.title1 {
+  font-size: 3.2rem;
+  font-family: "True Dream", sans-serif;
+  line-height: 3.8rem;
+  letter-spacing: 0.05em;
+  overflow: hidden;
+}
+
+.title2 {
+  font-size: 6.4rem;
+  font-family: "True Dream", sans-serif;
+  line-height: 7.7rem;
+  letter-spacing: 0.05em;
+  overflow: hidden;
+}
+
+.hero-text .title1 {
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+.hero-text .title2 {
+  margin-bottom: 2rem;
+  max-width: 65rem;
+}
+.hero-text .text {
+  margin-bottom: 5rem;
+  max-width: 70rem;
+}
+
+.text {
+  color: var(--blue);
+}
+
+.buttons {
+  display: flex;
+  gap: 5rem;
+}
+
+.button-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  width: 24.9rem;
+  max-width: 100%;
+  border-radius: 3rem;
+  background-color: var(--blue);
+  font-family: "True Dream", sans-serif;
+  line-height: 2.2rem;
+  letter-spacing: 0.05em;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.button-white {
+  border: 1px solid var(--green);
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  width: 24.9rem;
+  max-width: 100%;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+  align-items: center;
+  background-color: transparent;
+  color: var(--blue);
+  font-family: "True Dream", sans-serif;
+  line-height: 2.2rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.hero-img {
+  max-width: 77rem;
+  width: 100%;
+}
+
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+
+/* Section 3 */
+
+.section-3 {
+  display: grid;
+  gap: 5rem;
+}
+
+.section-3-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20rem;
+}
+
+.section-3 .section-3-row:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.section-3-row .row-img {
+  width: 100%;
+  max-width: 45rem;
+}
+.section-3-row .row-img img {
+  width: 100%;
+  display: inline-block;
+}
+
+.section-3-row .row-text {
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section-3-row .row-text .row-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+/* Section 4 + 6 */
+
+.section-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: var(--blue);
+  padding: 4rem;
+}
+
+.section-4-img {
+  max-width: 50rem;
+  overflow: hidden;
+}
+.section-4-img img {
+  width: 100%;
+  display: block;
+}
+.section-4-text {
+  overflow: hidden;
+}
+
+.section-4-text .title1,
+.section-4-text .text {
+  color: var(--white);
+}
+.section-4-text .button-white {
+  background-color: var(--white);
+  margin-top: 7.5rem;
+}
+
+/* Section 5 */
+
+.section-5-img {
+  max-width: 45rem;
+}
+
+.section-5-img img {
+  width: 100%;
+  display: block;
+}
+
+.section-5-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.section-5-content {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-5-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.section-5-text-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-5-text-row .row-title {
+  display: flex;
+  gap: 4rem;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Section 7 */
+.section-7-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.section-7-heading .text {
+  color: var(--green);
+}
+
+.faq {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 10rem 6.5rem;
+  background-color: var(--white);
+  border-radius: 4.6rem;
+}
+
+.faq-row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px var(--green) solid;
+  gap: 1.5rem;
+  overflow-x: hidden;
+}
+
+.q-row {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-answer {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.toggle-answer img {
+  height: 100%;
+  width: 100%;
+}
+
+.a-row .text {
+  margin-bottom: 1.5rem;
+}
+
+.faq-row .a-row {
+  max-height: 0px;
+  transition: 1s all;
+  overflow: hidden;
+}
+
+.faq-row.active .a-row {
+  max-height: 300px;
+}
+
+/* Section 8 */
+.section-8-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 20rem;
+}
+.section-8-heading .text {
+  color: var(--green);
+  text-align: center;
+}
+.section-8-heading .text p:nth-child(2) a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section 9 */
+
+.logo-footer {
+  max-width: 21.6rem;
+}
+
+.logo-footer img {
+  max-width: 21.6rem;
+
+  display: block;
+}
+
+.section-9 {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.section-9-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-9-col p:first-child {
+  color: var(--blue);
+  font-size: 2.4rem;
+  font-family: "True Dream", sans-serif;
+}
+.section-9-col a {
+  color: var(--blue);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+footer .text {
+  color: var(--white);
+  font-size: 2.4rem;
+}
+
+.social-contanct {
+  display: flex;
+  gap: 5rem;
+}
+
+.icon3 {
+  max-width: 3.9rem;
+}
+
+/* Form style  */
+
+.form-container {
+  max-width: 708px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 3rem;
+  padding: 4rem 6rem;
+}
+.form-container form {
+  width: 100%;
+}
+
+.form-container .title1 {
+  font-size: 2.4rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.form-row input,
+textarea {
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  outline: none;
+  border: 1px solid var(--blue);
+  outline: none;
+}
+
+textarea {
+  height: 20rem;
+}
+.form-row input::placeholder {
+  font-family: "True Dream", sans-serif;
+  font-size: 2rem;
+}

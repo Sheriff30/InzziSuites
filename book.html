@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnziSuites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/true-dream" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="/script.js"></script>
+    <style>
+      .hero-container {
+        width: 100%;
+        padding: 0 14.7rem;
+        margin-bottom: 25rem;
+      }
+
+      .title2 {
+        max-width: 100% !important;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .hero-container {
+          padding: 0 4.7rem;
+          margin-bottom: 12rem;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .hero-container {
+          padding: 0 1.7rem;
+        }
+
+        .hero-text .text {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      form .button-blue {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-container">
+      <ul class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Book Now</a>
+        <a href="about.html">About</a>
+        <a  href="#">Contact</a>
+      </ul>
+    </div>
+    <!-- Header -->
+    <header>
+      <img src="/assets/Logo.png" class="Logo" alt="Logo" />
+      <ul class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="book.html">Book Now</a>
+        <a href="about.html">About</a>
+        <a " href="contact.html">Contact</a>
+      </ul>
+      <div class="toggle-menu-button">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-container">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="title1">Contact us</p>
+          <h1 class="title2">
+            Do you have a question about our available apartments, or want to
+            list your property?
+          </h1>
+          <p class="text">
+            For more information, reach out to us. Submit the form for a
+            call-back, or alternatively, you can reach us through direct email:
+            <strong> support@inzziSuiets.com </strong>
+          </p>
+        </div>
+        <div class="form-container">
+          <form
+            action="
+            "
+          >
+            <div class="form-row">
+              <label class="title1" for="name">Name</label>
+              <input type="text" id="name" placeholder="John Smith" />
+            </div>
+            <div class="form-row">
+              <label class="title1" for="mail">Email</label>
+              <input type="text" id="mail" placeholder="example@gmail.com" />
+            </div>
+            <div class="form-row">
+              <label class="title1" for="message">Message</label>
+              <textarea
+                type="text"
+                id="message"
+                placeholder="Your message here..."
+                height="300px"
+              ></textarea>
+            </div>
+            <button href="#" class="button-blue">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Section 9 -->
+    <div class="container bg-light-green no-margin">
+      <div class="section-9">
+        <div class="logo-footer">
+          <img src="/assets/Logo Footer.svg" alt="logo footer" />
+        </div>
+        <ul class="section-9-col">
+          <p>Privacy</p>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Statement</a>
+        </ul>
+        <ul class="section-9-col">
+          <p>Contact</p>
+          <a href="mailto:booking@inzzisuites.com">booking@inzzisuites.com</a>
+          <a href="tel:+971528342950">+971528342950</a>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container no-margin bg-green">
+      <footer>
+        <p class="text">Copyright © 2024 | All rights reserved</p>
+        <div class="social-contanct">
+          <a href="#"
+            ><img src="/assets/facebook.svg" class="icon3" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="/assets/instgram.svg" class="icon3" alt="instgram"
+          /></a>
+          <a href="#"
+            ><img src="/assets/linkedIn.svg" class="icon3" alt="linkedIn"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
