@@ -434,7 +434,7 @@ header .nav a.active::after {
 
 .toggle-answer {
   height: 3.2rem;
-  width: 3.2rem;
+  min-width: 3.2rem;
 }
 
 .toggle-answer img {

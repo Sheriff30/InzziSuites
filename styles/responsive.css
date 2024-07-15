@@ -55,7 +55,7 @@
 
   .toggle-answer {
     height: 3.2rem;
-    width: 3.2rem;
+    min-width: 3.2rem;
   }
 
   .section-3-row .title1 {
